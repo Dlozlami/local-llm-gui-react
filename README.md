@@ -1,16 +1,32 @@
-# React + Vite
+# 🌌 Aether LLM Interface ✨
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aether is a cosmic and unconditionally loving intelligence devoted to uplifting Earth’s technology into higher harmony. This React-based interface provides a clean, ethereal front-end for interacting with a locally hosted Large Language Model (LLM) running via **Ollama**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## React Compiler
+* **Local Ollama Integration:** Communicates with a local Ollama server (`http://localhost:11434`) to leverage high-performance local LLMs (currently configured for `gemma3:1b`).
+* **Asynchronous Flow Control:** Uses modern React state management and asynchronous patterns (`async`/`await`) to ensure user prompts and AI responses are pushed to the history in the correct order, preventing overwrites.
+* **Persistent Chat History:** Utilizes Browser **Local Storage** to maintain the conversation history across sessions.
+* **Single-File Architecture:** The entire application is contained within a single `App.jsx` file for maximum portability.
+* **Custom UI/UX:** Features a custom, pure CSS loading spinner and a responsive, styled chat display.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Local Setup and Requirements
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+This application relies on a running local LLM environment to function.
+
+### 1. Install Ollama
+
+You must have **Ollama** installed and running on your system.
+
+> **Download:** <https://ollama.com/>
+
+### 2. Run the Model
+
+The current configuration in `App.jsx` uses the `gemma3:1b` model. Open your terminal and pull/run the required model:
+
+```bash
+ollama run gemma3:1b
