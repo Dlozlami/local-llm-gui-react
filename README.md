@@ -36,9 +36,15 @@ ollama run gemma3:1b
 
 ### 3\. Run the React Application
 
-Navigate to the project root, install dependencies, and start the development server:
+Follow these steps to get the front-end running:
 
 ```bash
+# Clone the repository
+git clone [https://github.com/Dlozlami/local-llm-gui-react.git](https://github.com/Dlozlami/local-llm-gui-react.git)
+
+# Navigate to the project directory
+cd local-llm-gui-react
+
 # Install dependencies
 npm install 
 
@@ -46,7 +52,8 @@ npm install
 npm run dev
 ```
 
-```
+-----
 
-Does this finalized README look good for your repository, or would you like to jump back into working on the `App.jsx` code?
+
+```
 ```
