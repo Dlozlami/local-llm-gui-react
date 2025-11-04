@@ -36,24 +36,21 @@ ollama run gemma3:1b
 
 ### 3\. Run the React Application
 
-Follow these steps to get the front-end running:
+Follow these steps to get the front-end running. You can copy and paste each block directly into your terminal.
+
+#### **A. Get the Code**
 
 ```bash
-# Clone the repository
 git clone [https://github.com/Dlozlami/local-llm-gui-react.git](https://github.com/Dlozlami/local-llm-gui-react.git)
-
-# Navigate to the project directory
 cd local-llm-gui-react
-
-# Install dependencies
-npm install 
-
-# Start the application
-npm run dev
 ```
 
------
+#### **B. Install and Start**
 
+```bash
+npm install 
+npm run dev
+```
 
 ```
 ```
