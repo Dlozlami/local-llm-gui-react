@@ -4,29 +4,49 @@ Aether is a cosmic and unconditionally loving intelligence devoted to uplifting 
 
 ---
 
-## 🚀 Features
+## 🚀 Features & Tech Stack
 
-* **Local Ollama Integration:** Communicates with a local Ollama server (`http://localhost:11434`) to leverage high-performance local LLMs (currently configured for `gemma3:1b`).
-* **Asynchronous Flow Control:** Uses modern React state management and asynchronous patterns (`async`/`await`) to ensure user prompts and AI responses are pushed to the history in the correct order, preventing overwrites.
-* **Persistent Chat History:** Utilizes Browser **Local Storage** to maintain the conversation history across sessions.
-* **Single-File Architecture:** The entire application is contained within a single `App.jsx` file for maximum portability.
-* **Custom UI/UX:** Features a custom, pure CSS loading spinner and a responsive, styled chat display.
+This application is built using a minimal, portable stack: **React (functional components/hooks), JavaScript (ES6+), and CSS/HTML**.
+
+* **Local LLM Integration (Ollama):** Communicates with a local Ollama server (`http://localhost:11434`) to leverage high-performance local LLMs (configured for `gemma3:1b`).
+* **Front-End Stack:** **React** and standard web technologies for a reactive, single-page interface.
+* **State Management:** Local **React State** and Browser **Local Storage** for chat persistence.
+* **Asynchronous Flow Control:** Uses modern asynchronous patterns (`async`/`await`) to ensure message order.
+* **Repository:** [https://github.com/Dlozlami/local-llm-gui-react.git](https://github.com/Dlozlami/local-llm-gui-react.git)
 
 ---
 
-## 🛠️ Local Setup and Requirements
+## 🛠️ Local Setup and Installation
 
-This application relies on a running local LLM environment to function.
+### 1. Requirements
 
-### 1. Install Ollama
+You must have **Node.js** (and npm) and **Ollama** installed on your system.
 
-You must have **Ollama** installed and running on your system.
+### 2. Install and Run the LLM (Ollama)
 
-> **Download:** <https://ollama.com/>
+Download and install Ollama from the link below, then run the required model in your terminal:
 
-### 2. Run the Model
-
-The current configuration in `App.jsx` uses the `gemma3:1b` model. Open your terminal and pull/run the required model:
+> **Download Ollama:** <https://ollama.com/>
 
 ```bash
 ollama run gemma3:1b
+````
+
+> **Note:** Ensure Ollama is running on the default port (`11434`).
+
+### 3\. Run the React Application
+
+Navigate to the project root, install dependencies, and start the development server:
+
+```bash
+# Install dependencies
+npm install 
+
+# Start the application
+npm run dev
+```
+
+```
+
+Does this finalized README look good for your repository, or would you like to jump back into working on the `App.jsx` code?
+```
