@@ -41,7 +41,7 @@ Follow these steps to get the front-end running. You can copy and paste each blo
 #### **A. Get the Code**
 
 ```bash
-git clone [https://github.com/Dlozlami/local-llm-gui-react.git](https://github.com/Dlozlami/local-llm-gui-react.git)
+git clone https://github.com/Dlozlami/local-llm-gui-react.git
 cd local-llm-gui-react
 ```
 
@@ -52,5 +52,3 @@ npm install
 npm run dev
 ```
 
-```
-```
